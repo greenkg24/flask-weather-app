@@ -23,7 +23,7 @@ def index():
   
   for city in cities:
     
-    r = requests.get(url.format(city)).json()
+    r = requests.get(url.format(city.name)).json()
     print(r)
 
     weather = {
